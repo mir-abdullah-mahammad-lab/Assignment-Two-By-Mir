@@ -10,3 +10,55 @@ nav{
     height: 32px;
     width: 219px;
 } */
+#for-sm-screen{
+    color:red;
+}
+
+@media screen and (max-width:576px){
+   
+    
+    nav{
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content:space-between;
+
+    }
+   
+    nav div {
+        display: none;
+    } 
+    nav .btn1{
+        display: none;
+    }
+    nav h2, img{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width:991px){
+
+    nav{
+        /* background-color: green; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav #humburger{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:992px){
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+     nav #humburger{
+        display: none;
+    }
+}
