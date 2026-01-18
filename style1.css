@@ -1,0 +1,12 @@
+:root{
+    --background-color: rgba(26, 11, 46, 1)
+}
+
+nav{
+    background-color: var(--background-color);
+    /* color: white; */
+}
+/* nav h2{
+    height: 32px;
+    width: 219px;
+} */
