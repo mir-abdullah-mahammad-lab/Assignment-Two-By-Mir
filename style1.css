@@ -109,6 +109,24 @@ nav{
     #underNav{
         border: 2px solid purple;
     }
+    .AboutThePodcast{
+        width: 100%;
+        gap: 200px;
+    }
+
+    .AboutThePodcast .upperPart{
+        width: 100%;
+    }
+    .AboutThePodcast .lowerPart{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+
+    }
+    .AboutThePodcast .lowerPart .achievements{
+        text-align: center;
+    }
     
 }
 
