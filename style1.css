@@ -1,5 +1,8 @@
 :root{
-    --background-color: rgba(26, 11, 46, 1)
+    --background-color: rgba(26, 11, 46, 1);
+    --grid-sec-color: rgba(35, 14, 61, 1);
+    --cards-bg-color: rgba(78, 17, 101, 0.4);
+    
 }
 
 nav{
@@ -8,7 +11,7 @@ nav{
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 
 /* section-one */
@@ -19,11 +22,10 @@ nav{
 .AboutThePodcast{
     height: 646px;
     width: 1600px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items:center;
     gap: 200px;
 }
@@ -40,6 +42,63 @@ nav{
 
 }
 
+.gap-left{
+    margin-left: 15px;
+}
+.forGrid{
+    width: 1600px;
+    height: 1121px;
+    /* border: 1px solid red; */
+    background-color: var(--grid-sec-color);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 80px;
+    overflow-y: hidden;
+
+
+}
+.forGrid #line1{
+    width: 1200px;
+    height: 58px;
+    /* border:1px solid green; */
+}
+.forGrid .cards-container{
+    width: 1200px;
+    height: 783px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 130px);
+    gap:30px;
+    overflow-y: visible;
+
+}
+.cards-container .card1,.card2,.card3,.card4, .card5{
+    background-color: var(--cards-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  
+}
+.cards-container .card1{
+        grid-column: span 2;
+        grid-row: span 4;
+}
+.cards-container .card2, .card3{
+        grid-column: span 4;
+        grid-row: span 2;
+}
+.cards-container .card4{
+        grid-column: span 4;
+        grid-row: span 2;
+}
+.cards-container .card5{
+        grid-column: span 2;
+        grid-row: span 2;
+}
 
 @media screen and (max-width:576px){
    
@@ -89,7 +148,16 @@ nav{
         text-align: center;
     }
 
-
+    .forGrid{
+        width: 100%;
+    }
+    .forGrid .cards-container{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 20px;
+        
+    }
 
 }
 
@@ -126,6 +194,17 @@ nav{
     }
     .AboutThePodcast .lowerPart .achievements{
         text-align: center;
+    }
+
+    .forGrid{
+        width: 100%;
+    }
+    .forGrid .cards-container{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 20px;
+        
     }
     
 }
