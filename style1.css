@@ -7,6 +7,8 @@
 
 nav{
     background-color: var(--background-color);
+    width: 1600px;
+    height: 92px;
     
 }
 
@@ -16,8 +18,29 @@ nav{
 
 /* section-one */
 #underNav{
+    width: 1600px;
+    height:760px;
+    /* border: 1px solid yellow; */
     background-image: url(./assets/hero-bg.png);
+    background-size: cover;
     
+}
+#underNav .hero-img{
+    width: 350px;
+    height: 350px;
+    background-image: url('./assets/hero-circle.png');
+}
+.mic-pic{
+         display: grid;
+        justify-content: right;
+        gap: 45px;
+    }
+.mic-pic img {
+    margin-right: 110px;
+}
+
+.mic-pic button{
+    margin-left: 110px;
 }
 .AboutThePodcast{
     height: 646px;
@@ -29,18 +52,9 @@ nav{
     align-items:center;
     gap: 200px;
 }
-.AboutThePodcast .upperPart{
-    /* border: 1px solid peru; */
-    width: 1200px;
-    height: 222px;
-    text-align: center;
-}
 
-.AboutThePodcast .lowerPart{
-    width: 1200px;
-    height: 94px;
 
-}
+
 
 .gap-left{
     margin-left: 15px;
@@ -144,6 +158,14 @@ nav{
     height: 40px;
     width: 40px;
 }
+
+footer{
+    width: 1600px;
+    height: 412px;
+    background-image: url('./assets/footer-bg.png');
+    background-size: cover;
+}
+
 @media screen and (max-width:576px){
    
     
@@ -168,10 +190,33 @@ nav{
     #underNav{
         border: 1px solid green;
         width: 100%;
-        height: 29rem;
-        background-size: 100%;
-        background-repeat: no-repeat;
+        height: 446px;
+        background-size: 100% 100%;
+        
     }
+    #underNav .hero-img{
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 80px;
+        background-image: url('./assets/hero-circle.png');
+        background-size: 100% 100%;
+    }
+    .mic-pic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .mic-pic img{
+        height: 50px;
+        width: 50px;
+        margin-left: 100px;
+    }
+    .mic-pic button{
+        margin-left: 100px;
+    }
+
 
     .AboutThePodcast{
         width: 100%;
@@ -256,6 +301,25 @@ nav{
     text-align: center;
 }
 
+footer{
+    width: 100%;
+    height: 248px;
+    /* border: 2px solid red; */
+    background-image: url('./assets/footer-bg.png');
+    background-size: 100% 100%;
+
+}
+footer .podcast{
+    /* border: 1px solid red; */
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap:10px;
+    
+}
+
+
 }
 
 
@@ -271,9 +335,7 @@ nav{
         display: none;
     }
 
-    #underNav{
-        border: 2px solid purple;
-    }
+   
     .AboutThePodcast{
         width: 100%;
         gap: 200px;
@@ -316,11 +378,4 @@ nav{
         display: none;
     }
 
-    #underNav{
-        border:2px solid red;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        
-        
-    }
 }

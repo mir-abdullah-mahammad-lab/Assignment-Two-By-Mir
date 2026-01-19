@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style1.css">
 </head>
 <body>
-    <nav class="h-[92px] w-[1600px] flex justify-around  items-center"  id="for-lr-scrn">
+    <nav class="flex justify-around  items-center"  id="for-lr-scrn">
         <h2 class="text-3xl text-white bg-clip-text hover:bg-amber-50">Tech<span class=" bg-clip-text text-transparent bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Wave</span></h2>
         <div class="w-[218px] h-[19px] flex justify-between text-white three-elements ">
             <p>About</p>
@@ -22,25 +22,30 @@
         <img src="/assets/hamburger-menu.png" alt="" id="humburger">
     </nav>
 
-    <section id="underNav" class="flex justify-center hide">
+    <section id="underNav" class="flex flex-col items-center ">
+              
         
-        
-        
-       <div class="m-25 h-[550px] w-[320px] flex flex-col  text-white">
-            <img src="assets/hero-circle.png" alt="" class="">
-
-            <h1 class="text-center text-lg">TechWave</h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <div class="two-buttons flex gap-3">
-                <button class="flex bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#F7E93F]"><img src="assets/spotify.png" alt="">Listen On Spotify</button>
-            
-                <button class="flex"><img h-[20px] w-[20px] src="assets/message.png" alt="">Subscribe</button>
-            </div>
-
+       <div class="hero-img m-25 ">
+             <div class="mic-pic">
+                <button class="text-black bg-green-500 rounded-xl">New</button>
+                <img src="./assets/microphone.png" alt="">
+             </div>
         </div>
+
+        <div class="tech text-white ">
+            <h1 class="text-6xl text-center m-3.5">TechWave</h1>
+            <p class="text-base m-2.5">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            <div class="buttons flex justify-around">
+                <button class="flex flex-row rounded-3xl bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#F7E93F]"><img src="assets/spotify.png" alt="">Listen On Spotify</button>
+            
+            <button class="flex gap-2 rounded-3xl border-4  border-green-500"><img h-[20px] w-[20px] src="assets/message.png" alt="">Subscribe</button>
+            </div>
+            
+        </div>
+
     </section>
 
-    <section class="AboutThePodcast hide">
+    <section class="AboutThePodcast ">
         <div class="upperPart text-white">
             <p id="one-p" class="text-5xl m-12">About the Podcast</p>
                 <p id="two-p" class="text-base">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
@@ -71,7 +76,7 @@
 
     </section>
 
-    <section class="forGrid text-white hide">
+    <section class="forGrid text-white ">
         <p id="line1" class="text-center text-5xl"> Why Choose TechWave</p>
         <div class="cards-container ">
             <div class="card1">
@@ -106,7 +111,7 @@
 
         </div>
     </section>
-    <section class="v-section text-white hide">
+    <section class="v-section text-white ">
         <div class="video-container">
             <h1 class="text-center text-5xl">Feature Episodes</h1>
             <div class="allVideos">
@@ -154,8 +159,15 @@
 
     </section>
 
-    <footer>
-        
+    <footer class="flex flex-col justify-center items-center gap-7">
+        <h1 class="text-6xl text-white">Tech<span class=" bg-clip-text text-transparent bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Wave</span></h1>
+        <div class="w-[544px] h-6 podcast text-white flex justify-between">
+        <p class="flex gap-2"> <img src="./assets/spotify.png" alt="">Spotify</p>
+        <p class="flex gap-2"><img src="./assets/apple-podcast.png" alt=""> Apple Podcasts</p>
+        <p class="flex gap-2"><img src="./assets/youtube-podcast.png" alt=""> YouTube</p>
+        <p class="flex gap-2"><img src="./assets/twitter.png" alt=""> Twitter</p>
+        </div>
+        <p class="text-white">© 2026 TechWave Podcast. All rights reserved.</p>
     </footer>
 </body>
 </html>
