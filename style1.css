@@ -52,6 +52,11 @@ nav{
     align-items:center;
     gap: 200px;
 }
+.AboutThePodcast .lowerPart{
+    /* border: 1px solid yellow; */
+    width:1200px;
+    height: 94px;
+}
 
 .gap-left{
     margin-left: 15px;
